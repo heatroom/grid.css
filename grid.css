@@ -1,0 +1,38 @@
+/* 1000px Grid System */
+
+.container, .wrapper {width: 1000px; margin: 0 auto;padding: 0 10px;position: relative;*zoom:1;}
+
+.grid {
+    margin: 0 20px 10px 0;
+    float:left;
+    display:inline;
+}
+
+.grid-1 {width:65px;}
+.grid-2 {width:150px;}
+.grid-3 {width:235px;}
+.grid-4 {width:320px;} /* 右侧推广位的宽度 */
+.grid-5 {width:405px;} /* 左侧边栏的宽度 */
+.grid-6 {width:490px;}
+.grid-7 {width:575px;}
+.grid-8 {width:660px;}
+.grid-9 {width:745px;}
+.grid-10 {width:830px;}
+.grid-11 {width:915px;}
+.grid-12 {width:1000px;} /* 最大页面宽度 */
+
+/*表示一行，用于包裹.grid-{{number}}。一行内的栅格数不要超过 12。*/
+.grid-row {
+    margin-right: -10px;
+    zoom: 1;
+}
+.grid-row:after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.last{margin-right:0;}
